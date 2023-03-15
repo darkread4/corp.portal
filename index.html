@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__container">
+			<div class="header__inner">
+				<div class="header__item-logo">
+					<a class="logo" href="#">
+						<img class="logo__img" src="images/logo.png" >
+					</a>
+				</div>
+				<div class="header__item-empty"></div>
+				<div class="header__item-search">
+					<input class="search" type="search" placeholder="Поиск по новостям, книгам">
+				</div>
+				<div class="header__item-support">
+					<a class="support" href="#">Техподдержка</a>
+				</div>
+				<div class="header__item-singIn">
+					<a class="singIn" href="#">Виталий Скрипкин</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main class="main">
+		<div class="main__container">
+			<div class="left__menu">
+				<div class="left__menu-content">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__item-link" href="#">
+									<img src="images/nav-1.svg">
+									Новости
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__item-link" href="#">
+									<img src="images/nav-2.svg">
+									Библиотека
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="left__menu-soon">СКОРО</div>
+					<ul class="soon__list">
+						<li class="soon__item">
+							<a class="soon__link">
+								<img src="images/soon-1.svg">
+								Сотрудники
+							</a>
+						</li>
+						<li class="soon__item">
+							<a class="soon__link">
+								<img src="images/soon-2.svg">
+								Документы
+							</a>
+						</li>
+						<li class="soon__item">
+							<a class="soon__link">
+								<img src="images/soon-3.svg">
+								Фотогалерея
+							</a>
+						</li>
+						<li class="soon__item">
+							<a class="soon__link">
+								<img src="images/soon-4.svg">
+								Активности
+							</a>
+						</li>
+						<li class="soon__item">
+							<a class="soon__link">
+								<img src="images/soon-5.svg">
+								Компания
+							</a>
+						</li>
+					</ul>
+					<div class="left__menu-room">
+						<a class="room___link" href="#">
+							<img src="images/room.svg">
+							1С: Кабинет сотрудника
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__content">
+				<div class="container">
+					<h2 class="main__content-title">Новости</h2>
+					<div class="filter">
+						<button onclick="myFunction()" class="filter__btn">За все время</button>
+						<div id="myFilter" class="filter__content">
+							<a>За всё время</a>
+							<a>Эта неделя</a>
+							<a>Этот месяц</a>
+							<a>Прошлый месяц</a>
+						</div>
+					</div>
+					<div class="news">
+						<img class="news__img" src="images/news1.jpg">
+						<div class="news__inner-data">
+							<p class="news__data-text">08 ноября 2022 в 11:46</p>
+							<p class="news__data-whatch">221</p>
+							<p class="news__data-tag">Новости компании</p>
+						</div>
+						<div class="news__content">
+							<h3 class="news__content-title">Больше клиентов для «СервисКом»</h3>
+							<p class="news__content-text">
+								Одна из целей по развитию бизнеса — увеличение клиентской базы «СервисКома». Нас почти 300 человек и каждый может помочь в этом деле. 
+							</p>
+						</div>
+						<div class="news__whoWrite-box">
+							<div class="news__whoWrite-name">
+								<img src="images/whowrite.svg">
+								Администрация
+							</div>
+							<a class="news__content-more" href="#">
+								Читать
+								<img src="images/news-arrow.svg">
+							</a>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news__inner-data">
+							<p class="news__data-text">08 ноября 2022 в 11:46</p>
+							<p class="news__data-whatch">221</p>
+							<p class="news__data-tag">Спорт</p>
+						</div>
+						<div class="news__content">
+							<h3 class="news__content-title">Все на футбол!</h3>
+							<p class="news__content-text">
+								Уже через недель, 18 декабря 2022 состоится корпоративный турнир по мини-футболу среди корпоративных команд 1С в облаке. 
+							</p>
+						</div>
+						<div class="news__whoWrite-box">
+							<div class="news__whoWrite-name">
+								<img src="images/whowrite.svg">
+								Администрация
+							</div>
+							<a class="news__content-more" href="#">
+								Читать
+								<img src="images/news-arrow.svg">
+							</a>
+						</div>
+					</div>
+					<div class="pagination">
+						<a class="pagination__item-picture" href="#">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="32" height="32" rx="8" fill="#F4F4F4"/>
+								<path d="M12.56 18.64C12.2293 18.2453 11.8827 17.904 11.52 17.616C11.168 17.3173 10.7947 17.072 10.4 16.88V16.192C11.1893 15.7867 11.9093 15.1947 12.56 14.416H13.792C13.6747 14.7253 13.536 15.0187 13.376 15.296C13.2267 15.5627 13.0667 15.8187 12.896 16.064V17.008C13.0667 17.232 13.2267 17.4827 13.376 17.76C13.536 18.0267 13.6747 18.32 13.792 18.64H12.56ZM12.8 17.184L12.816 15.872H21.6V17.184H12.8Z" fill="#333333"/>
+							</svg>
+
+						</a>
+						<a class="pagination__item-nubmer pagination__item-nubmer--active" href="#">1</a>
+						<a class="pagination__item-nubmer" href="#">2</a>
+						<a class="pagination__item-nubmer" href="#">3</a>
+						<a class="pagination__item-nubmer" href="#">4</a>
+						<a class="pagination__item-picture" href="#">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="32" height="32" rx="8" fill="#F4F4F4"/>
+								<path d="M10.1188 20.912C10.1188 20.5173 10.2468 20.208 10.5028 19.984C10.7588 19.76 11.0948 19.648 11.5108 19.648C11.9375 19.648 12.2788 19.76 12.5348 19.984C12.7908 20.208 12.9188 20.5173 12.9188 20.912C12.9188 21.2853 12.7908 21.5893 12.5348 21.824C12.2788 22.0587 11.9375 22.176 11.5108 22.176C11.0948 22.176 10.7588 22.0587 10.5028 21.824C10.2468 21.5893 10.1188 21.2853 10.1188 20.912ZM14.6032 20.912C14.6032 20.5173 14.7312 20.208 14.9872 19.984C15.2432 19.76 15.5792 19.648 15.9952 19.648C16.4219 19.648 16.7632 19.76 17.0192 19.984C17.2752 20.208 17.4032 20.5173 17.4032 20.912C17.4032 21.2853 17.2752 21.5893 17.0192 21.824C16.7632 22.0587 16.4219 22.176 15.9952 22.176C15.5792 22.176 15.2432 22.0587 14.9872 21.824C14.7312 21.5893 14.6032 21.2853 14.6032 20.912ZM19.0876 20.912C19.0876 20.5173 19.2156 20.208 19.4716 19.984C19.7276 19.76 20.0636 19.648 20.4796 19.648C20.9062 19.648 21.2476 19.76 21.5036 19.984C21.7596 20.208 21.8876 20.5173 21.8876 20.912C21.8876 21.2853 21.7596 21.5893 21.5036 21.824C21.2476 22.0587 20.9062 22.176 20.4796 22.176C20.0636 22.176 19.7276 22.0587 19.4716 21.824C19.2156 21.5893 19.0876 21.2853 19.0876 20.912Z" fill="#333333"/>
+							</svg>
+						</a>
+						<a class="pagination__item-nubmer" href="#">12</a>
+						<a class="pagination__item-picture" href="#">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="32" height="32" rx="8" fill="#F4F4F4"/>
+								<path d="M18.192 18.64C18.2987 18.3627 18.416 18.1067 18.544 17.872C18.672 17.6267 18.816 17.3973 18.976 17.184H10.4V15.872H18.976C18.8267 15.6587 18.688 15.4347 18.56 15.2C18.432 14.9547 18.3147 14.6933 18.208 14.416H19.424C20.0853 15.1947 20.8107 15.7867 21.6 16.192V16.88C20.8107 17.264 20.0853 17.8507 19.424 18.64H18.192Z" fill="#333333"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right__menu">
+				<div class="birthday">
+					<div class="birthday__title">
+						<img class="birthday__title-img" src="images/bd-title.svg">
+						День рождения!
+					</div>
+					<div class="birthday__today">
+						сегодня
+					</div>
+					<ul class="birthday__today-list">
+						<li class="birthday__today-item">
+							Александр Тарасов
+						</li>
+						<li class="birthday__today-item">
+							Александр Юлин
+						</li>
+						<li class="birthday__today-item">
+							Евгений Молоковичев
+						</li>
+					</ul>
+					<div class="birthday__soon">
+						СКОРО
+					</div>
+					<ul class="birthday__soon-list">
+						<li class="birthday__soon-item">
+							Алина Чуева
+						</li>
+					</ul>
+				</div>
+				<div class="tags">
+					<div class="tags__title">
+						<img class="tags__title-img" src="images/t-title.svg">
+						Новости по темам
+					</div>
+					<a class="tags__item" href="#">Новости компании</a>
+					<a class="tags__item" href="#">Спорт</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__inner">
+			<div class="footer__item-empty"></div>
+			<div class="footer__item-empty"></div>
+			<div class="footer__item-menu">
+				<div class="footer__menu-inner">
+					<ul class="footer__list">
+						<li class="footer__item-title">
+							ХОЛДИНГ
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Scloud
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Сleversite
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								СервисКом
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Биржа Бухгалтеров
+							</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__item-title">
+							СПРАВКА
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Самоучитель 1С
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Инструкции
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								Брендбук Scloud
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__item-link" href="#">
+								О компании Scloud
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__item-social">
+				<div class="footer__social-inner">
+					<h3 class="footer__social-title">СОЦСЕТИ</h3>
+					<ul class="footer__social">
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="40" height="40" rx="8" fill="#279F00"/>
+									<path d="M28.5644 15.7449C28.6971 15.3152 28.5644 15 27.9367 15H25.8573C25.3282 15 25.0865 15.2726 24.9537 15.5721C24.9537 15.5721 23.8965 18.085 22.3984 19.7144C21.9148 20.1885 21.6939 20.3383 21.4303 20.3383C21.2985 20.3383 21.1069 20.1885 21.1069 19.7588V15.7449C21.1069 15.2292 20.9543 15 20.5134 15H17.246C16.916 15 16.7169 15.2384 16.7169 15.4658C16.7169 15.9538 17.4659 16.0665 17.5428 17.4418V20.4251C17.5428 21.0786 17.4223 21.1978 17.1568 21.1978C16.4523 21.1978 14.738 18.6756 13.7206 15.7884C13.5225 15.2274 13.3224 15.0009 12.7914 15.0009H10.713C10.1185 15.0009 10 15.2736 10 15.573C10 16.1109 10.7045 18.7726 13.2816 22.293C14.9997 24.6969 17.4185 26 19.6221 26C20.9429 26 21.106 25.7107 21.106 25.2116V23.3946C21.106 22.8161 21.2321 22.6996 21.6503 22.6996C21.9575 22.6996 22.4865 22.8512 23.7201 24.0092C25.1291 25.3826 25.3624 25.9991 26.1541 25.9991H28.2325C28.8261 25.9991 29.1228 25.7098 28.9522 25.1386C28.7654 24.5702 28.0922 23.7431 27.199 22.7643C26.7135 22.2061 25.9882 21.6054 25.7672 21.305C25.4591 20.9177 25.5482 20.7468 25.7672 20.403C25.7682 20.4039 28.3008 16.927 28.5644 15.7449Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="40" height="40" rx="8" fill="#279F00"/>
+									<path d="M20.4868 20.8241C17.7962 20.8241 15.5599 18.5953 15.5599 15.9581C15.5599 13.2297 17.7962 11 20.4878 11C23.2708 11 25.4148 13.2287 25.4148 15.9581C25.4053 18.6542 23.2061 20.8336 20.503 20.825C20.4973 20.825 20.4926 20.825 20.4868 20.8241ZM20.4868 13.8662C19.3477 13.8662 18.481 14.8209 18.481 15.9591C18.481 17.0953 19.3477 17.9598 20.4878 17.9598C21.6736 17.9598 22.4946 17.0953 22.4946 15.9591C22.4956 14.82 21.6736 13.8662 20.4868 13.8662ZM22.4489 24.873L25.2329 27.5568C25.7805 28.1468 25.7805 29.0113 25.2329 29.5575C24.6405 30.1475 23.7271 30.1475 23.2708 29.5575L20.4878 26.8281L17.7962 29.5575C17.5228 29.8302 17.1571 29.966 16.7456 29.966C16.4266 29.966 16.0618 29.8292 15.7418 29.5575C15.1941 29.0113 15.1941 28.1468 15.7418 27.5559L18.5705 24.8721C17.5495 24.5709 16.5685 24.1425 15.6532 23.6C14.9684 23.2362 14.8322 22.327 15.197 21.6439C15.6532 20.9618 16.4742 20.7804 17.2047 21.2354C19.221 22.4628 21.7574 22.4628 23.7737 21.2354C24.5043 20.7804 25.37 20.9618 25.7805 21.6439C26.192 22.327 26.0082 23.2352 25.3691 23.6C24.5033 24.1463 23.4994 24.5557 22.4498 24.874L22.4489 24.873Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="40" height="40" rx="8" fill="#279F00"/>
+									<path d="M26.613 12.1998L9.73942 19.458C9.73942 19.458 8.94166 19.7577 9.00341 20.3105C9.06682 20.8643 9.71781 21.1176 9.71781 21.1176L13.9636 22.6841C13.9636 22.6841 15.2451 27.2919 15.4973 28.1687C15.7496 29.043 15.9519 29.0636 15.9519 29.0636C16.1868 29.1755 16.4003 28.9973 16.4003 28.9973L19.1434 26.2558L23.4186 29.8498C24.575 30.4028 24.9959 29.2506 24.9959 29.2506L28 12.6384C28 11.5319 26.613 12.1998 26.613 12.1998ZM23.6257 27.9146L19.052 24.0707L17.6327 25.4887L17.9448 22.4718L24.0414 16.5L15.731 21.5992L12.0448 20.2393L26.1088 14.1892L23.6257 27.9146Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect width="40" height="40" rx="8" fill="#279F00"/>
+									<path d="M29.6135 16.0439C29.3951 15.2479 28.7543 14.6198 27.9408 14.4054C26.4541 14.0065 20.5066 14 20.5066 14C20.5066 14 14.56 13.9935 13.0724 14.3748C12.2749 14.5873 11.6161 15.2293 11.3959 16.0244C11.0038 17.4773 11 20.4907 11 20.4907C11 20.4907 10.9962 23.519 11.3854 24.957C11.6038 25.7521 12.2446 26.3802 13.0591 26.5946C14.5609 26.9935 20.4923 27 20.4923 27C20.4923 27 26.4399 27.0065 27.9265 26.6261C28.7392 26.4127 29.3828 25.7855 29.604 24.9904C29.997 23.5385 29.9999 20.526 29.9999 20.526C29.9999 20.526 30.0188 17.4968 29.6135 16.0439ZM18.6041 23.2824L18.6089 17.7157L23.552 20.5037L18.6041 23.2824Z" fill="white"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__item-smallEmpty"></div>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
